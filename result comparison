@@ -1,0 +1,38 @@
+simple policy:
+c=10
+mean:  -18.60958  standard deviation:  6.597447402109395
+
+c=20
+mean:  -18.605016  standard deviation:  6.583246436200305
+
+MC policy:
+time1:
+mean:  -13.397859  standard deviation:  5.257057087013513
+time2:
+mean:  -13.406203  standard deviation:  5.277376822133416
+
+4. mean:  -13.890369  standard deviation:  5.599607490158486
+have w2=1.5
+mean:  -13.699054  standard deviation:  5.3260018311191
+
+c=20
+mean:  -14.057073  standard deviation:  5.666960532125753
+
+
+Q learning:
+
+mean:  -16.792896  standard deviation:  5.654155457111521
+
+mean:  -20.304574  standard deviation:  6.883470394976942
+
+mean:  -18.857523  standard deviation:  6.469805971161037
+
+mean:  -18.08758  standard deviation:  6.102177131450709
+
+3. mean:  -15.645548  standard deviation:  5.425199883847229
+
+4. mean:  -13.41875  standard deviation:  5.264661284213827
+
+5. mean:  -14.743746  standard deviation:  5.800480660038786
+
+6. mean:  -13.147836  standard deviation:  5.290414399374023
