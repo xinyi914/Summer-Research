@@ -30,7 +30,7 @@ def demand(time):
 
 
 # the input state is the state after the take away has happened
-# return reward and next state
+# return reward and next state at each step
 def nextstate(s,a,demand,w1 = 1,w2 = 1):
 
     # the newly made food is in age 1
@@ -60,7 +60,7 @@ def nextstate(s,a,demand,w1 = 1,w2 = 1):
     a1 = int(a1)
     return reward, [time,a,a1]
 
-
+# return an array of rewards, states, and actions chosen at each step
 def simulate(policy,epsilon=0.1):
     states = [[0,0,0]]
     actions = []
@@ -93,6 +93,7 @@ def MC(q,qn,policy,V):
             s = states[j]
             a = actions[j]
             qn[s[0],s[1],s[2],a] += 1
+            # use incremental formula for updating averages
             q[s[0],s[1],s[2],a] += (g-q[s[0],s[1],s[2],a])/qn[s[0],s[1],s[2],a]
             V[s[0],s[1],s[2]] = q[s[0], s[1], s[2]].max()
             max_a = q[s[0], s[1], s[2]].argmax()

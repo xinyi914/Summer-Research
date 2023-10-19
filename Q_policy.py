@@ -128,6 +128,7 @@ for time in range(TIME+1):
 np.save("trial5_alt_Q_policy1_change_epsilon.npy",policy)
 policy = np.load("trial5_alt_Q_policy1_change_epsilon.npy")
 
+# result
 tomake = []
 rewards = np.zeros(EPOCH)
 for i in range(EPOCH):
