@@ -36,8 +36,8 @@ def demand(time):
 def nextstate(s,a,demand):
 
     # the newly made food is in age 1
-    a1 = s[1] # the number of sandwich in 0-30min during t~t+1
-    a2 = s[2] # the number of sandwich in 31-60min during t~t+1
+    a1 = s[1] # the number of sandwich in 0-15min during t~t+1
+    a2 = s[2] # the number of sandwich in 15-30min during t~t+1
 
     counter = a1 + a2 # the number of sandwich on the counter
 
